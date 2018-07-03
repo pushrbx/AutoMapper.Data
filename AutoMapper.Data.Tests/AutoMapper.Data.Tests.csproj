@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Description>AutoMapper.Data.Tests Class Library</Description>
     <Authors>Jimmy Bogard</Authors>
-    <TargetFrameworks>netcoreapp2.0;net461</TargetFrameworks>
+    <TargetFrameworks>netcoreapp2.0;net451;net461</TargetFrameworks>
     <DebugType>portable</DebugType>
     <AssemblyName>AutoMapper.Data.Tests</AssemblyName>
     <PackageId>AutoMapper.Data.Tests</PackageId>

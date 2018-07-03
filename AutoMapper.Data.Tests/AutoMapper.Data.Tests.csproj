@@ -1,9 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <Description>AutoMapper.Data.Tests Class Library</Description>
     <Authors>Jimmy Bogard</Authors>
-    <TargetFrameworks>net461;netcoreapp2.0</TargetFrameworks>
+    <TargetFrameworks>netcoreapp2.0;net461</TargetFrameworks>
     <DebugType>portable</DebugType>
     <AssemblyName>AutoMapper.Data.Tests</AssemblyName>
     <PackageId>AutoMapper.Data.Tests</PackageId>
@@ -15,11 +14,9 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
   </PropertyGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\AutoMapper.Data\AutoMapper.Data.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0-preview-20170810-02" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
@@ -29,5 +26,4 @@
     <PackageReference Include="System.Data.Common" Version="4.3.0" />
     <PackageReference Include="Shouldly" Version="3.0.0" />
   </ItemGroup>
-
 </Project>

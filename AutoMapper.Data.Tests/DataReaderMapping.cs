@@ -109,6 +109,7 @@
     {
         public When_mapping_a_data_reader_to_matching_dtos()
         {
+            Mapper.Reset();
             Mapper.Initialize(cfg =>
             {
                 cfg.Mappers.Insert(0, new DataReaderMapper());
@@ -172,6 +173,7 @@
     {
         public When_mapping_a_data_reader_to_a_dto_and_the_map_does_not_exist()
         {
+            Mapper.Reset();
             Mapper.Initialize(cfg => cfg.Mappers.Insert(0, new DataReaderMapper()));
             _dataReader = new DataBuilder().BuildDataReader();
         }
@@ -200,6 +202,7 @@
     {
         public When_mapping_a_single_data_record_to_a_dto()
         {
+            Mapper.Reset();
             Mapper.Initialize(cfg =>
             {
                 cfg.Mappers.Insert(0, new DataReaderMapper());
@@ -321,6 +324,7 @@
 
         public When_mapping_a_data_reader_to_a_dto_with_nullable_field()
         {
+            Mapper.Reset();
             Mapper.Initialize(cfg => {
                 cfg.Mappers.Insert(0, new DataReaderMapper());
                 cfg.AddMemberConfiguration().AddMember<DataRecordMemberConfiguration>();
@@ -400,6 +404,7 @@
 
         public When_mapping_a_data_reader_to_a_dto_with_nullable_enum()
         {
+            Mapper.Reset();
             Mapper.Initialize(cfg => {
                 cfg.Mappers.Insert(0, new DataReaderMapper());
                 cfg.AddMemberConfiguration().AddMember<DataRecordMemberConfiguration>();
@@ -496,6 +501,7 @@
 
         public When_mapping_a_data_reader_to_a_dto_with_nested_dto()
         {
+            Mapper.Reset();
             Mapper.Initialize(cfg => {
                 cfg.Mappers.Insert(0, new DataReaderMapper());
                 
@@ -564,6 +570,7 @@
 
         public When_mapping_a_data_reader_to_a_dto_with_missing_columns_in_data_reader()
         {
+            Mapper.Reset();
             Mapper.Initialize(cfg => {
                 cfg.Mappers.Insert(0, new DataReaderMapper());
 

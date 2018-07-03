@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Data;
 using System.Reflection;
 using System.Reflection.Emit;
-using AutoMapper;
 using AutoMapper.Configuration.Conventions;
 using AutoMapper.Data.Utils;
 using AutoMapper.Utils;

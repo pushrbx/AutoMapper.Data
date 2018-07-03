@@ -32,7 +32,7 @@ namespace AutoMapper.Data.Mappers
 
                 try
                 {
-                    itemExpr = CollectionMapperExpressionFactory.MapItemExpr(configurationProvider, profileMap, propertyMap, typeof(IEnumerable<IDataRecord>), destExpression.Type, contextExpression, out itemParam);
+                    itemExpr = CollectionMapperExpressionFactory.MapItemExpr(configurationProvider, profileMap, typeof(IEnumerable<IDataRecord>), destExpression.Type, contextExpression, out itemParam);
                 }
                 catch (Exception ex)
                 {

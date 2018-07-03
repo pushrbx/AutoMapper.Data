@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <Description>ADO.NET extensions for AutoMapper</Description>
     <VersionPrefix>1.0.1</VersionPrefix>
@@ -12,11 +11,9 @@
     <PackageProjectUrl>https://github.com/AutoMapper/AutoMapper.Data</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/AutoMapper/AutoMapper.Data/blob/master/LICENSE.txt</PackageLicenseUrl>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="6.1.1" />
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
   </ItemGroup>
-
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
     <PackageReference Include="System.Reflection.Emit" Version="4.3.0" />
     <PackageReference Include="System.Reflection.Emit.ILGeneration" Version="4.3.0" />
@@ -24,5 +21,4 @@
     <PackageReference Include="System.Reflection.TypeExtensions" Version="4.4.0" />
     <PackageReference Include="System.Data.Common" Version="4.3.0" />
   </ItemGroup>
-
 </Project>

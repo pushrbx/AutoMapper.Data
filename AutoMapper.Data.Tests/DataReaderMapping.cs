@@ -13,6 +13,7 @@
     {
         public When_mapping_a_data_reader_to_a_dto()
         {
+            Mapper.Reset();
             Mapper.Initialize(cfg =>
             {
                 cfg.AddDataReaderMapping(YieldReturnEnabled);
